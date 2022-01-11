@@ -1,4 +1,4 @@
-import {SIGN_UP} from "./actionTypes";
+
 
 export const signup = (formData,navigate) => async (dispatch) => {
   try {
