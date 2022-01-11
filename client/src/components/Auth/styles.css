@@ -1,0 +1,78 @@
+.auth-container {
+  background-color: #f1faee;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+}
+.auth-container form {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 16px #ccc;
+}
+form h2 {
+  text-align: center;
+}
+
+.group {
+  display: flex;
+}
+.ip-group {
+  margin: 16px;
+  position: relative;
+}
+.ip {
+  width: 100%;
+  padding: 8px 16px;
+  font-size: inherit;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #001219;
+}
+.form-submit {
+  width: 100%;
+  padding: 8px 16px;
+  margin: 8px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  font-size: inherit;
+  background-color: #1d3557;
+  color: #fff;
+}
+
+.ip-label {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  color: #ccc;
+  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in,
+    color 200ms ease-in;
+}
+
+.ip:focus ~ .ip-label,
+.ip:not(:placeholder-shown) ~ .ip-label {
+  padding: 2px;
+  font-size: 12px;
+  top: -0.5rem;
+  left: 0.5rem;
+  background-color: #fff;
+  border-radius: 2px 4px;
+  color: #001219;
+  font-weight: bold;
+}
+
+.account {
+  text-align:right;
+  margin-top: 1rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+.account:hover {
+  text-decoration: underline;
+  color: #001219;
+}
